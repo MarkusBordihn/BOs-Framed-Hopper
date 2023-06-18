@@ -9,4 +9,4 @@ For the full changelog, please go to the [Git Hub History][history] instead.
 
 - Initial check-in for Bo's Framed Hopper
 
-[history]: https://github.com/MarkusBordihn/BOs-Material-Elements/commits/main
+[history]: https://github.com/MarkusBordihn/BOs-Framed-Hopper/commits/main

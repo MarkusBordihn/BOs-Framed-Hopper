@@ -119,7 +119,7 @@ repositories {
     }
   }
   maven {
-    name = "Material Elements: Core"
+    name = "Framed Hopper"
     url = "file:///${project.projectDir}/../.mcmodsrepo"
   }
 }
@@ -176,7 +176,7 @@ curseforge {
   apiKey = "${credentials.curseforge_api_token}"
   project {
     id = "${curseforge_project_id}"
-    changelog = file("../CHANGELOG.md")
+    changelog = file("./CHANGELOG.md")
     releaseType = 'release'
     addGameVersion("1.18.2")
     addGameVersion("Forge")
