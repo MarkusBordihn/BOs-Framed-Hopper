@@ -55,7 +55,7 @@ minecraft {
       property 'forge.logging.console.level', 'debug'
 
       mods {
-        material_elements_decorative {
+        framed_hopper {
           source sourceSets.main
         }
       }
@@ -75,7 +75,7 @@ minecraft {
       property 'forge.logging.console.level', 'debug'
 
       mods {
-        material_elements_decorative {
+        framed_hopper {
             source sourceSets.main
         }
       }
@@ -95,10 +95,10 @@ minecraft {
       property 'forge.logging.console.level', 'debug'
 
       // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
-      args '--mod', 'material_elements_decorative', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+      args '--mod', 'framed_hopper', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
 
       mods {
-        material_elements_decorative {
+        framed_hopper {
             source sourceSets.main
         }
       }
@@ -173,7 +173,7 @@ curseforge {
   apiKey = "${credentials.curseforge_api_token}"
   project {
     id = "${curseforge_project_id}"
-    changelog = file("../CHANGELOG.md")
+    changelog = file("./CHANGELOG.md")
     releaseType = 'release'
     addGameVersion("1.18.1")
     addGameVersion("Forge")
