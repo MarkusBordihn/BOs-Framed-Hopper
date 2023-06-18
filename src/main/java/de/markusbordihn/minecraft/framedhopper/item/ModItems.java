@@ -47,6 +47,8 @@ public class ModItems {
   public static final DeferredRegister<Item> ITEMS =
       DeferredRegister.create(ForgeRegistries.ITEMS, Constants.MOD_ID);
 
+
+
   // Wooden framed Hoppers
   public static final RegistryObject<Item> OAK_FRAMED_HOPPER =
       ITEMS.register(OakFramedHopper.NAME, () -> new BlockItem(ModBlocks.OAK_FRAMED_HOPPER.get(),
