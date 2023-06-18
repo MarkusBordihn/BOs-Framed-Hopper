@@ -1,5 +1,5 @@
 /**
- * Copyright 2021 Markus Bordihn
+ * Copyright 2023 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -24,9 +24,9 @@ import net.minecraft.world.item.ItemStack;
 
 import de.markusbordihn.minecraft.framedhopper.item.ModItems;
 
-public class MaterialElementsTab {
+public class FramedHopperTab {
 
-  protected MaterialElementsTab() {}
+  protected FramedHopperTab() {}
 
   public static final CreativeModeTab TAB_FRAMED_HOPPERS = new CreativeModeTab("framed_hoppers") {
     public ItemStack makeIcon() {

@@ -1,6 +1,6 @@
 {
-  "advancements.framed_hopper.crafting.root.description": "Explore the additional materials and elements.",
-  "advancements.framed_hopper.crafting.root.title": "Material Elements: Decorative",
+  "advancements.framed_hopper.crafting.root.title": "Framed Hopper",
+  "advancements.framed_hopper.crafting.root.description": "Explore the additional framed hoppers.",
   "advancements.framed_hopper.crafting.cover_a_hopper_with_wood.description": "Cover a hopper with plates that it look more elegant.",
   "advancements.framed_hopper.crafting.cover_a_hopper_with_wood.title": "Hoppers looking ugly, aren't there?",
 
@@ -22,6 +22,5 @@
   "item.framed_hopper.crimson_framed_hopper": "Crimson framed Hopper",
   "item.framed_hopper.warped_framed_hopper": "Warped framed Hopper",
 
-  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
-  "itemGroup.slabs": "Material & Elements: Slabs"
+  "itemGroup.framed_hoppers": "Framed Hoppers"
 }

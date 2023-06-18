@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Markus Bordihn
+ * Copyright 2023 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -33,7 +33,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.Container;
 import net.minecraft.world.ContainerHelper;
 import net.minecraft.world.WorldlyContainer;
@@ -126,12 +125,10 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
             for (int i = 0; i < blockEntity.getContainerSize(); ++i) {
               if (!blockEntity.getItem(i).isEmpty()) {
                 ItemStack itemStack = blockEntity.getItem(i).copy();
-                ItemStack removedItem = blockEntity.removeItem(i, 1);
-                if (removedItem != null) {
-                  ItemStack itemStackTarget = itemHandler.insertItem(slot, removedItem, false);
-                  if (itemStackTarget.isEmpty()) {
-                    return true;
-                  }
+                ItemStack itemStackTarget =
+                    itemHandler.insertItem(slot, blockEntity.removeItem(i, 1), false);
+                if (itemStackTarget.isEmpty()) {
+                  return true;
                 }
                 blockEntity.setItem(i, itemStack);
               }
@@ -163,8 +160,15 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
     }
   }
 
+  private static IntStream getSlots(Container container, Direction direction) {
+    if (container instanceof WorldlyContainer worldlyContainer) {
+      return IntStream.of(worldlyContainer.getSlotsForFace(direction));
+    }
+    return IntStream.range(0, container.getContainerSize());
+  }
+
   protected Component getDefaultName() {
-    return new TranslatableComponent("container.hopper");
+    return Component.translatable("container.hopper");
   }
 
   public double getLevelX() {
@@ -184,13 +188,6 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
       BlockState blockState) {
     Direction direction = blockState.getValue(HopperBlock.FACING);
     return HopperBlockEntity.getContainerAt(level, blockPos.relative(direction));
-  }
-
-  private static IntStream getSlots(Container container, Direction direction) {
-    if (container instanceof WorldlyContainer worldlyContainer) {
-      return IntStream.of(worldlyContainer.getSlotsForFace(direction));
-    }
-    return IntStream.range(0, container.getContainerSize());
   }
 
   public void setCooldown(int coolDown) {

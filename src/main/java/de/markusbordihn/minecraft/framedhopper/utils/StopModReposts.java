@@ -1,5 +1,5 @@
 /**
- * Copyright 2022 Markus Bordihn
+ * Copyright 2023 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -44,7 +44,7 @@ public class StopModReposts {
   private static boolean isDevEnvironment =
       version.isPresent() && version.get() != null && "MOD_DEV".equals(version.get());
 
-  private static String modFileFormatRegEx = Constants.MOD_ID + "_1.18.2-\\d+.\\d+.\\d+.jar";
+  private static String modFileFormatRegEx = Constants.MOD_ID + "_1.19-\\d+.\\d+.\\d+.jar";
 
   private static Pattern expectedFilePattern = Pattern.compile(modFileFormatRegEx);
 

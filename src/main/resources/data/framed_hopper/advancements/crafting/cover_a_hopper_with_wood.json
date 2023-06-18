@@ -1,5 +1,5 @@
 {
-  "parent": "framed_hopper:crafting/cut_panel",
+  "parent": "framed_hopper:root",
   "display": {
     "icon": {
       "item": "framed_hopper:oak_framed_hopper"
