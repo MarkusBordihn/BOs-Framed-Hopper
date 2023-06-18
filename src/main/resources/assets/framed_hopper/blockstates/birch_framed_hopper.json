@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "framed_hopper:block/birch_framed_hopper"
+    },
+    "facing=east": {
+      "model": "framed_hopper:block/birch_framed_hopper_side",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "framed_hopper:block/birch_framed_hopper_side"
+    },
+    "facing=south": {
+      "model": "framed_hopper:block/birch_framed_hopper_side",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "framed_hopper:block/birch_framed_hopper_side",
+      "y": 270
+    }
+  }
+}

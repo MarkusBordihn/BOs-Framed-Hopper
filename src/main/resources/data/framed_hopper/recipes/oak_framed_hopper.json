@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [" # ", "#H#", " # "],
+  "key": {
+    "H": {
+      "item": "minecraft:hopper"
+    },
+    "#": {
+      "item": "minecraft:oak_slab"
+    }
+  },
+  "result": {
+    "item": "framed_hopper:oak_framed_hopper",
+    "count": 1
+  }
+}

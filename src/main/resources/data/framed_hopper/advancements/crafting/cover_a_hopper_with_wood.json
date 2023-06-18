@@ -1,0 +1,31 @@
+{
+  "parent": "framed_hopper:crafting/cut_panel",
+  "display": {
+    "icon": {
+      "item": "framed_hopper:oak_framed_hopper"
+    },
+    "title": {
+      "translate": "advancements.framed_hopper.crafting.cover_a_hopper_with_wood.title"
+    },
+    "description": {
+      "translate": "advancements.framed_hopper.crafting.cover_a_hopper_with_wood.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "framed_hopper": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "framed_hopper:framed_hoppers"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["framed_hopper"]]
+}

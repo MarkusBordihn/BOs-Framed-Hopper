@@ -1,0 +1,27 @@
+{
+  "advancements.framed_hopper.crafting.root.title": "Material Elements: Dekorativ",
+  "advancements.framed_hopper.crafting.root.description": "Entdecken Sie die zusätzlichen Materialien und Elemente.",
+  "advancements.framed_hopper.crafting.cover_a_hopper_with_wood.description": "Bedecke einen Trichter mit Platten, damit er eleganter aussieht.",
+  "advancements.framed_hopper.crafting.cover_a_hopper_with_wood.title": "Trichter sehen hässlich aus, nicht wahr?",
+
+  "block.framed_hopper.oak_framed_hopper": "Trichter mit Eichenrahmen",
+  "block.framed_hopper.spruce_framed_hopper": "Trichter mit Fichtenrahmen",
+  "block.framed_hopper.birch_framed_hopper": "Trichter mit Birkenrahmen",
+  "block.framed_hopper.jungle_framed_hopper": "Hopper mit Dschungelrahmen",
+  "block.framed_hopper.acacia_framed_hopper": "Hopper mit Akazienrahmen",
+  "block.framed_hopper.dark_oak_framed_hopper": "Trichter mit Rahmen aus dunkler Eiche",
+  "block.framed_hopper.crimson_framed_hopper": "Crimson gerahmter Trichter",
+  "block.framed_hopper.warped_framed_hopper": "Hopper mit verzerrtem Rahmen",
+
+  "item.framed_hopper.oak_framed_hopper": "Trichter mit Eichenrahmen",
+  "item.framed_hopper.spruce_framed_hopper": "Trichter mit Fichtenrahmen",
+  "item.framed_hopper.birch_framed_hopper": "Trichter mit Birkenrahmen",
+  "item.framed_hopper.jungle_framed_hopper": "Hopper mit Dschungelrahmen",
+  "item.framed_hopper.acacia_framed_hopper": "Hopper mit Akazienrahmen",
+  "item.framed_hopper.dark_oak_framed_hopper": "Trichter mit Rahmen aus dunkler Eiche",
+  "item.framed_hopper.crimson_framed_hopper": "Crimson gerahmter Trichter",
+  "item.framed_hopper.warped_framed_hopper": "Hopper mit verzerrtem Rahmen",
+
+  "itemGroup.framed_hoppers": "Material & Elements: Framed Hoppers",
+  "itemGroup.slabs": "Material & Elemente: Platten"
+}

@@ -1,0 +1,31 @@
+{
+  "display": {
+    "icon": {
+      "item": "framed_hopper:oak_framed_hopper"
+    },
+    "title": {
+      "translate": "advancements.framed_hopper.crafting.root.title"
+    },
+    "description": {
+      "translate": "advancements.framed_hopper.crafting.root.description"
+    },
+    "frame": "task",
+    "show_toast": false,
+    "announce_to_chat": false,
+    "hidden": false,
+    "background": "framed_hopper:textures/gui/advancements/backgrounds/adventure.png"
+  },
+  "criteria": {
+    "crafting_table": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": ["minecraft:crafting_table"]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [["crafting_table"]]
+}

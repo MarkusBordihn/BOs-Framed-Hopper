@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "framed_hopper:acacia_framed_hopper",
+    "framed_hopper:birch_framed_hopper",
+    "framed_hopper:crimson_framed_hopper",
+    "framed_hopper:dark_oak_framed_hopper",
+    "framed_hopper:jungle_framed_hopper",
+    "framed_hopper:oak_framed_hopper",
+    "framed_hopper:spruce_framed_hopper",
+    "framed_hopper:warped_framed_hopper"
+  ]
+}
