@@ -40,5 +40,3 @@ generated
 *.stackdump
 *.log
 *.bak
-decorative/.vscode/launch.json
-core/.vscode/launch.json

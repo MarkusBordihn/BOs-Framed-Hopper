@@ -26,6 +26,8 @@ This allows you to combine different storage methods seamlessly, creating a harm
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
+| Forge 1.19     | ⚠️ Maintenance only   |
+| Forge 1.19.1   | ⚠️ Maintenance only   |
 | Forge 1.19.2   | ⚠️ Maintenance only   |
 | Forge 1.19.3   | ⚠️ Maintenance only   |
 | Forge 1.19.4   | ⚠️ Maintenance only   |
