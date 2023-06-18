@@ -40,14 +40,10 @@ import de.markusbordihn.minecraft.framedhopper.tabs.FramedHopperTab;
 
 public class ModItems {
 
-  protected ModItems() {
-
-  }
+  protected ModItems() {}
 
   public static final DeferredRegister<Item> ITEMS =
       DeferredRegister.create(ForgeRegistries.ITEMS, Constants.MOD_ID);
-
-
 
   // Wooden framed Hoppers
   public static final RegistryObject<Item> OAK_FRAMED_HOPPER =

@@ -68,6 +68,7 @@ public class FramedHopperBlock extends HopperBlock {
     return null;
   }
 
+  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
@@ -83,6 +84,7 @@ public class FramedHopperBlock extends HopperBlock {
     }
   }
 
+  @Deprecated
   @Override
   public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player,
       InteractionHand hand, BlockHitResult hitResult) {
@@ -98,6 +100,7 @@ public class FramedHopperBlock extends HopperBlock {
     }
   }
 
+  @Deprecated
   @Override
   public void entityInside(BlockState blockState, Level level, BlockPos blockPos, Entity entity) {
     if (level.getBlockEntity(blockPos) instanceof FramedHopperBlockEntity framedHopperBlockEntity) {
@@ -106,6 +109,7 @@ public class FramedHopperBlock extends HopperBlock {
     }
   }
 
+  @Deprecated
   @Override
   public void onRemove(BlockState blockState, Level level, BlockPos blockPos,
       BlockState targetBlockState, boolean isMoving) {

@@ -46,9 +46,7 @@ import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.WarpedF
 
 public class ModBlocks {
 
-  protected ModBlocks() {
-
-  }
+  protected ModBlocks() {}
 
   public static final DeferredRegister<Block> BLOCKS =
       DeferredRegister.create(ForgeRegistries.BLOCKS, Constants.MOD_ID);

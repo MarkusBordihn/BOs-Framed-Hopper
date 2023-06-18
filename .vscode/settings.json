@@ -6,18 +6,26 @@
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "cSpell.words": [],
-  "cSpell.ignorePaths": ["*.yml", ".gradle", ".vscode", "build", "run"],
+  "cSpell.ignorePaths": [
+    "*.yml",
+    ".gradle",
+    ".vscode",
+    "build",
+    "run",
+    "templates",
+    "lang"
+  ],
   "cSpell.customDictionaries": {
     "workspaceWords": {
       "name": "workspaceWords",
-      "path": "${workspaceRoot}/../.vscode/cspell.txt",
+      "path": "${workspaceRoot}/.vscode/cspell.txt",
       "scope": "workspace",
       "addWords": true
     },
     "custom": true
   },
   "java.configuration.updateBuildConfiguration": "automatic",
-  "java.format.settings.url": "./../java-google-style.xml",
+  "java.format.settings.url": "./java-google-style.xml",
   "java.format.settings.profile": "GoogleStyle",
   "java.dependency.showMembers": true,
   "java.dependency.packagePresentation": "flat",

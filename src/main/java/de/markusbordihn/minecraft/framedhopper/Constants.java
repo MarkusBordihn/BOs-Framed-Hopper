@@ -25,11 +25,10 @@ public final class Constants {
 
   // General Mod definitions
   public static final String LOG_NAME = "Framed Hopper";
-  public static final String LOG_REGISTER_PREFIX = "🪨 Register Framed Hopper";
+  public static final String LOG_REGISTER_PREFIX = "\u22BD Register Framed Hopper";
   public static final String MOD_ID = "framed_hopper";
   public static final String MOD_NAME = "Framed Hopper";
-  public static final String MOD_URL =
-      "https://www.curseforge.com/minecraft/mc-mods/framed-hopper";
+  public static final String MOD_URL = "https://www.curseforge.com/minecraft/mc-mods/framed-hopper";
 
   // Prefixes
   public static final String TEXT_PREFIX = "text.framed_hopper.";

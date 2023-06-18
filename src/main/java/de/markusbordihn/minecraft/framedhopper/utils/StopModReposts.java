@@ -44,7 +44,7 @@ public class StopModReposts {
   private static boolean isDevEnvironment =
       version.isPresent() && version.get() != null && "MOD_DEV".equals(version.get());
 
-  private static String modFileFormatRegEx = Constants.MOD_ID + "_1.19-\\d+.\\d+.\\d+.jar";
+  private static String modFileFormatRegEx = Constants.MOD_ID + "_1.19.2-\\d+.\\d+.\\d+.jar";
 
   private static Pattern expectedFilePattern = Pattern.compile(modFileFormatRegEx);
 
@@ -57,8 +57,8 @@ public class StopModReposts {
     }
     String jarFilePath = null;
     try {
-      jarFilePath = FramedHopper.class.getProtectionDomain().getCodeSource().getLocation()
-          .toURI().getPath();
+      jarFilePath =
+          FramedHopper.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath();
     } catch (SecurityException | URISyntaxException | NullPointerException exception) {
       log.error("Unable to get jar file path: {}", exception);
     }
