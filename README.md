@@ -1,4 +1,4 @@
-# Framed Hopper (1.19)
+# Framed Hopper (1.19.1)
 
 [![Framed Hopper Downloads](http://cf.way2muchnoise.eu/full_876836_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/framed-hopper)
 [![Framed Hopper Versions](http://cf.way2muchnoise.eu/versions/Minecraft_876836_all.svg)](https://www.curseforge.com/minecraft/mc-mods/framed-hopper)
@@ -26,6 +26,8 @@ This allows you to combine different storage methods seamlessly, creating a harm
 | -------------- | --------------------- |
 | Fabric Version | ❌ Not planned        |
 | Forge 1.18.2   | ⚠️ Maintenance only   |
+| Forge 1.19     | ⚠️ Maintenance only   |
+| Forge 1.19.1   | ⚠️ Maintenance only   |
 | Forge 1.19.2   | ⚠️ Maintenance only   |
 | Forge 1.19.3   | ⚠️ Maintenance only   |
 | Forge 1.19.4   | ⚠️ Maintenance only   |

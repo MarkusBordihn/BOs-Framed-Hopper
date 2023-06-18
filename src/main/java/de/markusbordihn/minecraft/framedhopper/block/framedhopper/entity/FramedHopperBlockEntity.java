@@ -117,16 +117,14 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
       BlockState targetBlockState = level.getBlockState(targetPos);
       BlockEntity targetBlockEntity = level.getBlockEntity(targetPos);
       if (targetBlockEntity != null && targetBlockState != null && !targetBlockState.isAir()) {
-        IItemHandler itemHandler =
-            ItemHandlerUtils.getItemHandler(targetBlockEntity, facing.getOpposite());
+        IItemHandler itemHandler = ItemHandlerUtils.getItemHandler(targetBlockEntity, facing.getOpposite());
         if (itemHandler != null) {
           int numberOfSlots = itemHandler.getSlots();
           for (int slot = 0; slot < numberOfSlots; slot++) {
             for (int i = 0; i < blockEntity.getContainerSize(); ++i) {
               if (!blockEntity.getItem(i).isEmpty()) {
                 ItemStack itemStack = blockEntity.getItem(i).copy();
-                ItemStack itemStackTarget =
-                    itemHandler.insertItem(slot, blockEntity.removeItem(i, 1), false);
+                ItemStack itemStackTarget = itemHandler.insertItem(slot, blockEntity.removeItem(i, 1), false);
                 if (itemStackTarget.isEmpty()) {
                   return true;
                 }
@@ -249,8 +247,7 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
       WorldlyContainer worldlyContainer = (WorldlyContainer) containerTarget;
       int[] slotsForFace = worldlyContainer.getSlotsForFace(direction);
       for (int slot = 0; slot < slotsForFace.length && !itemStack.isEmpty(); ++slot) {
-        itemStack =
-            tryMoveInItem(container, containerTarget, itemStack, slotsForFace[slot], direction);
+        itemStack = tryMoveInItem(container, containerTarget, itemStack, slotsForFace[slot], direction);
       }
     } else {
       int i = containerTarget.getContainerSize();
@@ -317,8 +314,7 @@ public class FramedHopperBlockEntity extends RandomizableContainerBlockEntity im
             && !framedHopperBlockEntity.isOnCustomCooldown()) {
           int k = 0;
           if (framedHopperContainer instanceof FramedHopperBlockEntity) {
-            FramedHopperBlockEntity hopperBlockEntity =
-                (FramedHopperBlockEntity) framedHopperContainer;
+            FramedHopperBlockEntity hopperBlockEntity = (FramedHopperBlockEntity) framedHopperContainer;
             if (framedHopperBlockEntity.tickedGameTime >= hopperBlockEntity.tickedGameTime) {
               k = 1;
             }
