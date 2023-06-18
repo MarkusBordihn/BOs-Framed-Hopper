@@ -178,7 +178,7 @@ curseforge {
     id = "${curseforge_project_id}"
     changelog = file("../CHANGELOG.md")
     releaseType = 'release'
-    addGameVersion("1.19")
+    addGameVersion("1.19.1")
     addGameVersion("Forge")
   }
 }
