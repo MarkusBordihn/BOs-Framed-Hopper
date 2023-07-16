@@ -12,6 +12,7 @@
   "block.framed_hopper.dark_oak_framed_hopper": "Trichter mit Rahmen aus dunkler Eiche",
   "block.framed_hopper.crimson_framed_hopper": "Crimson gerahmter Trichter",
   "block.framed_hopper.warped_framed_hopper": "Hopper mit verzerrtem Rahmen",
+  "block.framed_hopper.mangrove_framed_hopper": "Hopper mit Mangrovenrahmen",
 
   "item.framed_hopper.oak_framed_hopper": "Trichter mit Eichenrahmen",
   "item.framed_hopper.spruce_framed_hopper": "Trichter mit Fichtenrahmen",
@@ -21,6 +22,7 @@
   "item.framed_hopper.dark_oak_framed_hopper": "Trichter mit Rahmen aus dunkler Eiche",
   "item.framed_hopper.crimson_framed_hopper": "Crimson gerahmter Trichter",
   "item.framed_hopper.warped_framed_hopper": "Hopper mit verzerrtem Rahmen",
+  "item.framed_hopper.mangrove_framed_hopper": "Hopper mit Mangrovenrahmen",
 
   "itemGroup.framed_hoppers": "Framed Hoppers"
 }

@@ -32,6 +32,7 @@ import de.markusbordihn.minecraft.framedhopper.block.framedhopper.BirchFramedHop
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.CrimsonFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.DarkOakFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.JungleFramedHopper;
+import de.markusbordihn.minecraft.framedhopper.block.framedhopper.MangroveFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.OakFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.SpruceFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.WarpedFramedHopper;
@@ -40,6 +41,7 @@ import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.BirchFr
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.CrimsonFramedHopperEntity;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.DarkOakFramedHopperEntity;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.JungleFramedHopperEntity;
+import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.MangroveFramedHopperEntity;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.OakFramedHopperEntity;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.SpruceFramedHopperEntity;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.entity.WarpedFramedHopperEntity;
@@ -71,6 +73,8 @@ public class ModBlocks {
       BLOCKS.register(CrimsonFramedHopper.NAME, CrimsonFramedHopper::new);
   public static final RegistryObject<Block> WARPED_FRAMED_HOPPER =
       BLOCKS.register(WarpedFramedHopper.NAME, WarpedFramedHopper::new);
+  public static final RegistryObject<Block> MANGROVE_FRAMED_HOPPER =
+      BLOCKS.register(MangroveFramedHopper.NAME, MangroveFramedHopper::new);
 
   // Wooden framed Hoppers
   public static final RegistryObject<BlockEntityType<OakFramedHopperEntity>> OAK_HOPPER_ENTITY =
@@ -97,5 +101,8 @@ public class ModBlocks {
   public static final RegistryObject<BlockEntityType<WarpedFramedHopperEntity>> WARPED_HOPPER_ENTITY =
       BLOCK_ENTITY_TYPES.register(WarpedFramedHopper.NAME, () -> BlockEntityType.Builder
           .of(WarpedFramedHopperEntity::new, WARPED_FRAMED_HOPPER.get()).build(null));
+  public static final RegistryObject<BlockEntityType<MangroveFramedHopperEntity>> MANGROVE_HOPPER_ENTITY =
+      BLOCK_ENTITY_TYPES.register(MangroveFramedHopper.NAME, () -> BlockEntityType.Builder
+          .of(MangroveFramedHopperEntity::new, MANGROVE_FRAMED_HOPPER.get()).build(null));
 
 }

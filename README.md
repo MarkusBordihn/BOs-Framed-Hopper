@@ -19,18 +19,3 @@ Minecraft hoppers with wooden frames bring a whole new level of security to your
 Furthermore, these hoppers are designed to complement other storage systems such as Storage Drawers.
 While they excel as standalone components, their compatibility with popular storage mods like Storage Drawers enhances their versatility.
 This allows you to combine different storage methods seamlessly, creating a harmonious organization system tailored to your needs.
-
-## Version Status Overview 🛠️
-
-| Version        | Status                |
-| -------------- | --------------------- |
-| Fabric Version | ❌ Not planned        |
-| Forge 1.18.1   | ⚠️ Maintenance only   |
-| Forge 1.18.2   | ⚠️ Maintenance only   |
-| Forge 1.19     | ⚠️ Maintenance only   |
-| Forge 1.19.1   | ⚠️ Maintenance only   |
-| Forge 1.19.2   | ⚠️ Maintenance only   |
-| Forge 1.19.3   | ⚠️ Maintenance only   |
-| Forge 1.19.4   | ⚠️ Maintenance only   |
-| Forge 1.20     | ⚠️ Maintenance only   |
-| Forge 1.20.1   | ✔️ Active development |

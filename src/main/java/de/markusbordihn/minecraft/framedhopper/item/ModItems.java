@@ -33,6 +33,7 @@ import de.markusbordihn.minecraft.framedhopper.block.framedhopper.BirchFramedHop
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.CrimsonFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.DarkOakFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.JungleFramedHopper;
+import de.markusbordihn.minecraft.framedhopper.block.framedhopper.MangroveFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.OakFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.SpruceFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.WarpedFramedHopper;
@@ -69,5 +70,8 @@ public class ModItems {
           new Item.Properties().tab(FramedHopperTab.TAB_FRAMED_HOPPERS)));
   public static final RegistryObject<Item> WARPED_FRAMED_HOPPER = ITEMS
       .register(WarpedFramedHopper.NAME, () -> new BlockItem(ModBlocks.WARPED_FRAMED_HOPPER.get(),
+          new Item.Properties().tab(FramedHopperTab.TAB_FRAMED_HOPPERS)));
+  public static final RegistryObject<Item> MANGROVE_FRAMED_HOPPER = ITEMS.register(
+      MangroveFramedHopper.NAME, () -> new BlockItem(ModBlocks.MANGROVE_FRAMED_HOPPER.get(),
           new Item.Properties().tab(FramedHopperTab.TAB_FRAMED_HOPPERS)));
 }

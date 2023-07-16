@@ -12,6 +12,7 @@
   "block.framed_hopper.dark_oak_framed_hopper": "Dark Oak framed Hopper",
   "block.framed_hopper.crimson_framed_hopper": "Crimson framed Hopper",
   "block.framed_hopper.warped_framed_hopper": "Warped framed Hopper",
+  "block.framed_hopper.mangrove_framed_hopper": "Mangrove framed Hopper",
 
   "item.framed_hopper.oak_framed_hopper": "Oak framed Hopper",
   "item.framed_hopper.spruce_framed_hopper": "Spruce framed Hopper",
@@ -21,6 +22,7 @@
   "item.framed_hopper.dark_oak_framed_hopper": "Dark Oak framed Hopper",
   "item.framed_hopper.crimson_framed_hopper": "Crimson framed Hopper",
   "item.framed_hopper.warped_framed_hopper": "Warped framed Hopper",
+  "item.framed_hopper.mangrove_framed_hopper": "Mangrove framed Hopper",
 
   "itemGroup.framed_hoppers": "Framed Hoppers"
 }
