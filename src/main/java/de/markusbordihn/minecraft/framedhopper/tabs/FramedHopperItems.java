@@ -19,36 +19,26 @@
 
 package de.markusbordihn.minecraft.framedhopper.tabs;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
+import net.minecraft.world.item.CreativeModeTab.DisplayItemsGenerator;
+import net.minecraft.world.item.CreativeModeTab.ItemDisplayParameters;
+import net.minecraft.world.item.CreativeModeTab.Output;
 
-import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTab;
-
-import net.minecraftforge.event.CreativeModeTabEvent;
-
-import de.markusbordihn.minecraft.framedhopper.Constants;
 import de.markusbordihn.minecraft.framedhopper.item.ModItems;
 
-public class FramedHopperTab {
+public class FramedHopperItems implements DisplayItemsGenerator {
+  protected FramedHopperItems() {}
 
-  protected static final Logger log = LogManager.getLogger(Constants.LOG_NAME);
-
-  protected FramedHopperTab() {}
-
-  public static CreativeModeTab TAB_FRAMED_HOPPERS;
-
-  public static void handleCreativeModeTabRegister(CreativeModeTabEvent.Register event) {
-
-    log.info("{} creative mod tabs ...", Constants.LOG_REGISTER_PREFIX);
-
-    TAB_FRAMED_HOPPERS = event.registerCreativeModeTab(
-        new ResourceLocation(Constants.MOD_ID, "framed_hoppers"), builder -> {
-          builder.icon(() -> ModItems.OAK_FRAMED_HOPPER.get().getDefaultInstance())
-              .displayItems(new FramedHopperItems())
-              .title(Component.translatable("itemGroup.framed_hoppers")).build();
-        });
+  @Override
+  public void accept(ItemDisplayParameters itemDisplayParameters, Output output) {
+    // Framed Hopper
+    output.accept(ModItems.OAK_FRAMED_HOPPER.get());
+    output.accept(ModItems.SPRUCE_FRAMED_HOPPER.get());
+    output.accept(ModItems.BIRCH_FRAMED_HOPPER.get());
+    output.accept(ModItems.JUNGLE_FRAMED_HOPPER.get());
+    output.accept(ModItems.ACACIA_FRAMED_HOPPER.get());
+    output.accept(ModItems.DARK_OAK_FRAMED_HOPPER.get());
+    output.accept(ModItems.CRIMSON_FRAMED_HOPPER.get());
+    output.accept(ModItems.WARPED_FRAMED_HOPPER.get());
+    output.accept(ModItems.MANGROVE_FRAMED_HOPPER.get());
   }
-
 }

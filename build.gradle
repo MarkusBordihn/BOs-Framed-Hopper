@@ -54,6 +54,10 @@ minecraft {
           source sourceSets.main
         }
       }
+
+      // Mixin Support
+      property 'mixin.env.remapRefMap', 'true'
+      property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
     }
 
     server {
@@ -74,6 +78,10 @@ minecraft {
             source sourceSets.main
         }
       }
+
+      // Mixin Support
+      property 'mixin.env.remapRefMap', 'true'
+      property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
     }
 
     data {
@@ -126,11 +134,11 @@ dependencies {
   minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
   // Compability Tests
-  runtimeOnly fg.deobf("curse.maven:storagedrawers-223852:4608642")
+  runtimeOnly fg.deobf("curse.maven:storagedrawers-223852:4609202")
 
   // Additional helpful Mods for development (dev depenedency)
-  runtimeOnly fg.deobf("curse.maven:jade-324717:4434045")
-  runtimeOnly fg.deobf("curse.maven:jei-238222:4455246")
+  runtimeOnly fg.deobf("curse.maven:jade-324717:4573063")
+  runtimeOnly fg.deobf("curse.maven:jei-238222:4592504")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
