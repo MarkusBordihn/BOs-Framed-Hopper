@@ -31,14 +31,16 @@ public class FramedHopperItems implements DisplayItemsGenerator {
   @Override
   public void accept(ItemDisplayParameters itemDisplayParameters, Output output) {
     // Framed Hopper
+    output.accept(ModItems.ACACIA_FRAMED_HOPPER.get());
+    output.accept(ModItems.BAMBOO_FRAMED_HOPPER.get());
+    output.accept(ModItems.BIRCH_FRAMED_HOPPER.get());
+    output.accept(ModItems.CHERRY_FRAMED_HOPPER.get());
+    output.accept(ModItems.CRIMSON_FRAMED_HOPPER.get());
+    output.accept(ModItems.DARK_OAK_FRAMED_HOPPER.get());
+    output.accept(ModItems.JUNGLE_FRAMED_HOPPER.get());
+    output.accept(ModItems.MANGROVE_FRAMED_HOPPER.get());
     output.accept(ModItems.OAK_FRAMED_HOPPER.get());
     output.accept(ModItems.SPRUCE_FRAMED_HOPPER.get());
-    output.accept(ModItems.BIRCH_FRAMED_HOPPER.get());
-    output.accept(ModItems.JUNGLE_FRAMED_HOPPER.get());
-    output.accept(ModItems.ACACIA_FRAMED_HOPPER.get());
-    output.accept(ModItems.DARK_OAK_FRAMED_HOPPER.get());
-    output.accept(ModItems.CRIMSON_FRAMED_HOPPER.get());
     output.accept(ModItems.WARPED_FRAMED_HOPPER.get());
-    output.accept(ModItems.MANGROVE_FRAMED_HOPPER.get());
   }
 }

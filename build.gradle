@@ -134,11 +134,11 @@ dependencies {
   minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
   // Compability Tests
-  runtimeOnly fg.deobf("curse.maven:storagedrawers-223852:4609202")
+  // runtimeOnly fg.deobf("curse.maven:storagedrawers-223852:4609202")
 
   // Additional helpful Mods for development (dev depenedency)
-  runtimeOnly fg.deobf("curse.maven:jade-324717:4573063")
-  runtimeOnly fg.deobf("curse.maven:jei-238222:4592504")
+  runtimeOnly fg.deobf("curse.maven:jade-324717:4614153")
+  runtimeOnly fg.deobf("curse.maven:jei-238222:4581323")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

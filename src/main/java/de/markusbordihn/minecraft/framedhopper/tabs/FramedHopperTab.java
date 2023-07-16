@@ -22,11 +22,12 @@ package de.markusbordihn.minecraft.framedhopper.tabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 
-import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 
 import de.markusbordihn.minecraft.framedhopper.Constants;
 import de.markusbordihn.minecraft.framedhopper.item.ModItems;
@@ -37,18 +38,14 @@ public class FramedHopperTab {
 
   protected FramedHopperTab() {}
 
-  public static CreativeModeTab TAB_FRAMED_HOPPERS;
+  public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS =
+      DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Constants.MOD_ID);
 
-  public static void handleCreativeModeTabRegister(CreativeModeTabEvent.Register event) {
-
-    log.info("{} creative mod tabs ...", Constants.LOG_REGISTER_PREFIX);
-
-    TAB_FRAMED_HOPPERS = event.registerCreativeModeTab(
-        new ResourceLocation(Constants.MOD_ID, "framed_hoppers"), builder -> {
-          builder.icon(() -> ModItems.OAK_FRAMED_HOPPER.get().getDefaultInstance())
+  public static final RegistryObject<CreativeModeTab> TAB_FRAMED_HOPPERS =
+      CREATIVE_TABS.register("framed_hoppers",
+          () -> CreativeModeTab.builder()
+              .icon(() -> ModItems.OAK_FRAMED_HOPPER.get().getDefaultInstance())
               .displayItems(new FramedHopperItems())
-              .title(Component.translatable("itemGroup.framed_hoppers")).build();
-        });
-  }
+              .title(Component.translatable("itemGroup.framed_hoppers")).build());
 
 }

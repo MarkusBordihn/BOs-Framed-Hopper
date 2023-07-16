@@ -1,5 +1,5 @@
 /**
- * Copyright 2023 Markus Bordihn
+ * Copyright 2022 Markus Bordihn
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and
  * associated documentation files (the "Software"), to deal in the Software without restriction,
@@ -40,8 +40,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.material.Material;
-import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
@@ -59,7 +58,7 @@ public class FramedHopperBlock extends HopperBlock {
   }
 
   public FramedHopperBlock() {
-    super(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.STONE)
+    super(BlockBehaviour.Properties.of().mapColor(MapColor.METAL)
         .requiresCorrectToolForDrops().strength(3.0F, 4.8F).sound(SoundType.METAL).noOcclusion());
   }
 
@@ -68,7 +67,6 @@ public class FramedHopperBlock extends HopperBlock {
     return null;
   }
 
-  @Deprecated
   @Override
   public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos,
       CollisionContext collisionContext) {
@@ -84,7 +82,6 @@ public class FramedHopperBlock extends HopperBlock {
     }
   }
 
-  @Deprecated
   @Override
   public InteractionResult use(BlockState blockState, Level level, BlockPos blockPos, Player player,
       InteractionHand hand, BlockHitResult hitResult) {
@@ -100,7 +97,6 @@ public class FramedHopperBlock extends HopperBlock {
     }
   }
 
-  @Deprecated
   @Override
   public void entityInside(BlockState blockState, Level level, BlockPos blockPos, Entity entity) {
     if (level.getBlockEntity(blockPos) instanceof FramedHopperBlockEntity framedHopperBlockEntity) {
@@ -109,7 +105,6 @@ public class FramedHopperBlock extends HopperBlock {
     }
   }
 
-  @Deprecated
   @Override
   public void onRemove(BlockState blockState, Level level, BlockPos blockPos,
       BlockState targetBlockState, boolean isMoving) {

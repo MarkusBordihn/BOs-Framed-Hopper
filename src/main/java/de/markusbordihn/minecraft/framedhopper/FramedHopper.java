@@ -49,7 +49,7 @@ public class FramedHopper {
     ModItems.ITEMS.register(modEventBus);
 
     DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> {
-      modEventBus.addListener(FramedHopperTab::handleCreativeModeTabRegister);
+      FramedHopperTab.CREATIVE_TABS.register(modEventBus);
     });
   }
 }

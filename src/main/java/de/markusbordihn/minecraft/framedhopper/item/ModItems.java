@@ -29,7 +29,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import de.markusbordihn.minecraft.framedhopper.Constants;
 import de.markusbordihn.minecraft.framedhopper.block.ModBlocks;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.AcaciaFramedHopper;
+import de.markusbordihn.minecraft.framedhopper.block.framedhopper.BambooFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.BirchFramedHopper;
+import de.markusbordihn.minecraft.framedhopper.block.framedhopper.CherryFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.CrimsonFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.DarkOakFramedHopper;
 import de.markusbordihn.minecraft.framedhopper.block.framedhopper.JungleFramedHopper;
@@ -46,30 +48,36 @@ public class ModItems {
       DeferredRegister.create(ForgeRegistries.ITEMS, Constants.MOD_ID);
 
   // Wooden framed Hoppers
+  public static final RegistryObject<Item> ACACIA_FRAMED_HOPPER =
+      ITEMS.register(AcaciaFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.ACACIA_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> BAMBOO_FRAMED_HOPPER =
+      ITEMS.register(BambooFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.BAMBOO_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> BIRCH_FRAMED_HOPPER =
+      ITEMS.register(BirchFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.BIRCH_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> CHERRY_FRAMED_HOPPER =
+      ITEMS.register(CherryFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.CHERRY_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> CRIMSON_FRAMED_HOPPER =
+      ITEMS.register(CrimsonFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.CRIMSON_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> DARK_OAK_FRAMED_HOPPER =
+      ITEMS.register(DarkOakFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.DARK_OAK_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> JUNGLE_FRAMED_HOPPER =
+      ITEMS.register(JungleFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.JUNGLE_FRAMED_HOPPER.get(), new Item.Properties()));
+  public static final RegistryObject<Item> MANGROVE_FRAMED_HOPPER =
+      ITEMS.register(MangroveFramedHopper.NAME,
+          () -> new BlockItem(ModBlocks.MANGROVE_FRAMED_HOPPER.get(), new Item.Properties()));
   public static final RegistryObject<Item> OAK_FRAMED_HOPPER = ITEMS.register(OakFramedHopper.NAME,
       () -> new BlockItem(ModBlocks.OAK_FRAMED_HOPPER.get(), new Item.Properties()));
   public static final RegistryObject<Item> SPRUCE_FRAMED_HOPPER =
       ITEMS.register(SpruceFramedHopper.NAME,
           () -> new BlockItem(ModBlocks.SPRUCE_FRAMED_HOPPER.get(), new Item.Properties()));
-  public static final RegistryObject<Item> BIRCH_FRAMED_HOPPER =
-      ITEMS.register(BirchFramedHopper.NAME,
-          () -> new BlockItem(ModBlocks.BIRCH_FRAMED_HOPPER.get(), new Item.Properties()));
-  public static final RegistryObject<Item> JUNGLE_FRAMED_HOPPER =
-      ITEMS.register(JungleFramedHopper.NAME,
-          () -> new BlockItem(ModBlocks.JUNGLE_FRAMED_HOPPER.get(), new Item.Properties()));
-  public static final RegistryObject<Item> ACACIA_FRAMED_HOPPER =
-      ITEMS.register(AcaciaFramedHopper.NAME,
-          () -> new BlockItem(ModBlocks.ACACIA_FRAMED_HOPPER.get(), new Item.Properties()));
-  public static final RegistryObject<Item> DARK_OAK_FRAMED_HOPPER =
-      ITEMS.register(DarkOakFramedHopper.NAME,
-          () -> new BlockItem(ModBlocks.DARK_OAK_FRAMED_HOPPER.get(), new Item.Properties()));
-  public static final RegistryObject<Item> CRIMSON_FRAMED_HOPPER =
-      ITEMS.register(CrimsonFramedHopper.NAME,
-          () -> new BlockItem(ModBlocks.CRIMSON_FRAMED_HOPPER.get(), new Item.Properties()));
   public static final RegistryObject<Item> WARPED_FRAMED_HOPPER =
       ITEMS.register(WarpedFramedHopper.NAME,
           () -> new BlockItem(ModBlocks.WARPED_FRAMED_HOPPER.get(), new Item.Properties()));
-  public static final RegistryObject<Item> MANGROVE_FRAMED_HOPPER =
-      ITEMS.register(MangroveFramedHopper.NAME,
-          () -> new BlockItem(ModBlocks.MANGROVE_FRAMED_HOPPER.get(), new Item.Properties()));
 }
