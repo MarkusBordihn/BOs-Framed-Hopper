@@ -1,4 +1,4 @@
-# Framed Hopper (1.20)
+# Framed Hopper (1.20.1)
 
 [![Framed Hopper Downloads](http://cf.way2muchnoise.eu/full_876836_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/framed-hopper)
 [![Framed Hopper Versions](http://cf.way2muchnoise.eu/versions/Minecraft_876836_all.svg)](https://www.curseforge.com/minecraft/mc-mods/framed-hopper)
