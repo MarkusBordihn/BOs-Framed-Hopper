@@ -129,8 +129,8 @@ dependencies {
   // runtimeOnly fg.deobf("curse.maven:storagedrawers-223852:4609202")
 
   // Additional helpful Mods for development (dev depenedency)
-  runtimeOnly fg.deobf("curse.maven:jade-324717:4614153")
-  runtimeOnly fg.deobf("curse.maven:jei-238222:4644453")
+  // runtimeOnly fg.deobf("curse.maven:jade-324717:4614153")
+  // runtimeOnly fg.deobf("curse.maven:jei-238222:4644453")
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..
